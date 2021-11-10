@@ -8,7 +8,6 @@ public class SQRService {
             int result = (int) Math.pow(i, 2);
             if (result >= minRange && result <= maxRange) {
                 counter++;
-                System.out.println(i);
             }
         }
         return counter;
