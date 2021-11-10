@@ -18,8 +18,8 @@ class SQRServiceTest {
     @ParameterizedTest
     @CsvSource(value = {"validValue | 200 | 300 | 3",
                         "minRange | 100 | 100 | 1",
-                        "maxRange | 9801 | 9801| 0",
-                        "maxBorderRange | 100 | 9801 | 89",
+                        "maxRange | 9801 | 9801| 1",
+                        "maxBorderRange | 100 | 9801 | 90",
                         "belowTheRange | 0 | 99 | 0",
                         "overTheRange | 9802 | 15000 | 0"}, delimiter = '|')
     void shouldCalculateSqrt(String testName, int minRange, int maxRange, int expected) {
