@@ -7,6 +7,14 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 class SQRServiceTest {
 
+
+    /**
+     * Тест проверяет верно ли рассчитывает метод "calculateSqrt" кол-во чисел возведенных в квадрат
+     * @param testName - название тест-кейса
+     * @param minRange - нижний диапазон
+     * @param maxRange - верхний диапазон
+     * @param expected - ожидаемый результат
+     */
     @ParameterizedTest
     @CsvSource(value = {"validValue | 200 | 300 | 3",
                         "minRange | 100 | 100 | 1",
